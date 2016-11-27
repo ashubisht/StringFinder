@@ -30,13 +30,13 @@ public class StringFinder {
 																				//for last letter of currently genertaed string
 		}catch(Exception e){ //Reached till end of locale
 			System.out.println("Finished string search of length "+ str.length() +
-					". Now will search for length "+str.length()+1 + "Last string searched is "+str);
+					/*". Now will search for length "+(str.length()+1) +*/ ". Last string searched is "+str);
 			
 			//Temp code for limiting search
-			if(str.length()+1>3){
+			/*if(str.length()+1>3){
 				Logger.getLogger(this.getClass()).log(Level.ALL, "Size exceeded");
 				throw new Exception("Size exceeded");
-			}
+			}*/
 			strGen= generateNextStr(str, charList, size);
 		}
 		return strGen;
